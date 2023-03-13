@@ -2,6 +2,11 @@
   "name": "dacgroup-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm":"please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,6 +19,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/node": "18.15.2",
     "@types/react": "18.0.28",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
