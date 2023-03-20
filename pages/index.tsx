@@ -2,7 +2,7 @@ import FoodCard from '../components/cards/food/FoodCard';
 import { mockFoodCardProps } from '../components/cards/food/FoodCard.mocks';
 import NavBar from '../components/layouts/navbar/NavBar';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {

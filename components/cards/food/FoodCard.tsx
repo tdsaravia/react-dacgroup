@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './FoodCard.module.css';
+import styles from './FoodCard.module.scss';
 
 export interface IFoodCard {
   title: string;
