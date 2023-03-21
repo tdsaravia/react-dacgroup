@@ -6,7 +6,7 @@ export interface INavBar {}
 const NavBar: React.FC<INavBar> = () => {
   return (
     <nav className={styles.nav}>
-      <Link href="/" className={styles.link}>
+      <Link href="/">
         <p>Home</p>
       </Link>
       <Link href="/about">
