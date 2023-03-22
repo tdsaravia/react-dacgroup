@@ -2,8 +2,8 @@ import { createClient } from 'contentful';
 
 const useContentful = () => {
   const client = createClient({
-    space: 'oowvels4urqz',
-    accessToken: '2XUwTDdtuzckBBQsDn-JvLonl85Kj5YJL5WBUNNuW50',
+    space: '',
+    accessToken: '',
     hostL: 'preview.contentful.com',
   });
 
