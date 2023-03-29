@@ -1,0 +1,92 @@
+.container {
+  margin: 1rem;
+}
+
+.container * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+  max-width: 647px;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 647px;
+  border-radius: 1em;
+}
+.header__title {
+  width: 100%;
+  display: flex;
+  max-width: 647px;
+  background-color: #cfaa58;
+  height: 43px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 20px;
+
+  p {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
+    text-transform: none !important;
+  }
+}
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #eeeeee;
+
+  .card__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    h4 {
+      font-family: 'Proba Pro';
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 39px;
+      text-transform: uppercase;
+      color: #101820;
+    }
+
+    p {
+      font-family: 'Proba Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #101820;
+      text-transform: none;
+      width: 50%;
+    }
+
+    .card__button {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      justify-content: space-between;
+      p {
+        font-family: 'Proba Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+        text-transform: none;
+        width: 50%;
+      }
+    }
+  }
+}

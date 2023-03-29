@@ -120,7 +120,10 @@
   height: 1em;
   margin-left: 0.5rem;
 }
-
+.image {
+  width: 400px;
+  height: auto;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

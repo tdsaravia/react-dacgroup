@@ -20,9 +20,11 @@
   "dependencies": {
     "contentful": "^9.3.5",
     "next": "13.2.4",
+    "node-sass": "^8.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.59.3",
+    "sass-loader": "^13.2.1",
     "util": "^0.12.5"
   },
   "devDependencies": {
@@ -46,9 +48,12 @@
     "eslint-plugin-storybook": "^0.6.11",
     "husky": "^8.0.3",
     "prettier": "^2.8.4",
+    "storybook-addon-a11y": "^3.1.9",
+    "storybook-addon-next": "^1.7.3",
     "typescript": "4.9.5"
   },
   "resolutions": {
-    "webpack": "^5"
+    "webpack": "^5",
+    "@storybook/react-docgen-typescript-plugin": "npm:react-docgen-typescript-plugin@1.0.2"
   }
 }

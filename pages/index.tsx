@@ -1,17 +1,40 @@
-import FoodCard from '../components/cards/food/FoodCard';
-import { mockFoodCardProps } from '../components/cards/food/FoodCard.mocks';
+/* eslint-disable @next/next/no-img-element */
 import NavBar from '../components/layouts/navbar/NavBar';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
+import { ContentfulEntry } from '../interfaces/contentful';
 import styles from '../styles/Home.module.scss';
+import { fetchEntries } from '../utils/contentful';
 import { NextPageWithLayout } from './page';
+interface Props {
+  carousel: ContentfulEntry[];
+}
 
-const Home: NextPageWithLayout = () => {
+export async function getStaticProps() {
+  const carousel = await fetchEntries('carousel');
+  return {
+    props: {
+      carousel,
+    },
+  };
+}
+
+const Home: NextPageWithLayout<Props> = ({ carousel }) => {
   return (
     <section className={styles.main}>
       <h1 className={styles.title}>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
-      <FoodCard {...mockFoodCardProps.base} />
+      {carousel.map((carousel) => (
+        <div key={carousel.sys.id}>
+          <h1>{carousel.fields.title}</h1>
+          <p>{carousel.fields.description}</p>
+          <img
+            src={carousel.fields.image.fields.file.url}
+            alt="image"
+            className="image"
+          />
+        </div>
+      ))}
     </section>
   );
 };

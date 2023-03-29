@@ -1,21 +1,19 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import FoodCard, { IFoodCard } from './FoodCard';
-import { mockFoodCardProps } from './FoodCard.mocks';
+import Footer, { IFooter } from './Footer';
+import { mockFooterProps } from './Footer.mocks';
 export default {
   title: 'cards/FoodCard',
-  component: FoodCard,
+  component: Footer,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} as ComponentMeta<typeof FoodCard>;
+} as ComponentMeta<typeof Footer>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof FoodCard> = (args) => (
-  <FoodCard {...args} />
-);
+const Template: ComponentStory<typeof Footer> = (args) => <Footer {...args} />;
 
 export const Base = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 
 Base.args = {
-  ...mockFoodCardProps.base,
-} as IFoodCard;
+  ...mockFooterProps.base,
+} as IFooter;

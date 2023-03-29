@@ -1,0 +1,122 @@
+.title {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  left: 0;
+  padding: 32px;
+}
+.title__image {
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+}
+
+.title h2 {
+  color: #2a8738;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.title__star_icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.marker {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.marker p {
+  color: #2a8738;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.container__data {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px;
+  margin-bottom: 70px;
+}
+
+.carousel__container {
+  width: 100%;
+  display: flex;
+  background-color: #eeeeee;
+  margin: 0;
+}
+.container__meals {
+  display: flex;
+  width: 100%;
+  padding: 32px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  h2 {
+    font-size: 42px;
+    line-height: 40px;
+    color: #101820;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  p {
+    font-size: 30px;
+    line-height: 39px;
+    color: #101820;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+
+.container__cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.card__container {
+  max-width: 648px;
+  width: 100%;
+  display: flex;
+  height: auto;
+
+  .top__content {
+    width: 100%;
+    background-color: #cfaa58;
+    padding: px;
+    height: 43px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      color: #000;
+      text-transform: none;
+      font-weight: 400;
+    }
+  }
+
+  .card__image {
+    width: 100%;
+    position: relative;
+    height: 278px;
+  }
+}

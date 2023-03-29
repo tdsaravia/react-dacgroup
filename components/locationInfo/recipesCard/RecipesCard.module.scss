@@ -1,0 +1,79 @@
+.container {
+  margin: 1rem;
+}
+
+.container * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+  max-width: 419px;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 419px;
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #eee;
+  width: 100%;
+  max-width: 419px;
+  h4 {
+    font-family: 'Proba Pro';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #101820;
+  }
+
+  p {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #101820;
+    text-transform: none !important;
+    margin-right: 20px;
+  }
+  a {
+    font-size: 18px;
+    line-height: 42px;
+    color: #277c34;
+    font-weight: 400;
+    text-transform: none !important;
+  }
+  .card__info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    .last::before {
+      content: '|';
+      display: inline-block;
+      width: 2px;
+      color: #909090;
+      margin-right: 20px;
+      pointer-events: none;
+    }
+
+    .icon {
+      width: 16px;
+      height: auto;
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+  }
+}

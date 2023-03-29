@@ -1,3 +1,4 @@
+import Footer from '../components/layouts/footer/Footer';
 import NavBar from '../components/layouts/navbar/NavBar';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
 import { NextPageWithLayout } from './page';
@@ -40,6 +41,7 @@ About.getLayout = (page) => {
     <PrimaryLayout>
       <NavBar />
       {page}
+      <Footer copyrightText="The Fresh Market, Inc." />
     </PrimaryLayout>
   );
 };
