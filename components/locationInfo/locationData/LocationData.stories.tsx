@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import LocationData, { ILocationData } from './LocationData';
 import { mockLocationDataProps } from './LocationData.mocks';
 export default {
-  title: 'templates/BaseTemplate',
+  title: 'locationData/LocationData',
   component: LocationData,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

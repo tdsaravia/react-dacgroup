@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import NavBar, { INavBar } from './NavBar';
 import { mockNavBarProps } from './NavBar.mocks';
 export default {
-  title: 'cards/FoodCard',
+  title: 'navbar/NavBar',
   component: NavBar,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import DinnerCard, { IDinnerCard } from './DinnerCard';
 import { mockDinnerCardProps } from './DinnerCard.mocks';
 export default {
-  title: 'cards/DinnerCard',
+  title: 'dinnerCards/DinnerCard',
   component: DinnerCard,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

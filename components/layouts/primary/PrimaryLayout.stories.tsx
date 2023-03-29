@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import PrimaryLayout, { IPrimaryLayout } from './PrimaryLayout';
 import { mockPrimaryLayoutProps } from './PrimaryLayout.mocks';
 export default {
-  title: 'cards/FoodCard',
+  title: 'primary/PrimaryLayout',
   component: PrimaryLayout,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

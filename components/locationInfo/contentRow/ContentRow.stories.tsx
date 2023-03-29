@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import ContentRow, { IContentRow } from './ContentRow';
 import { mockContentRowProps } from './ContentRow.mocks';
 export default {
-  title: 'templates/ContentRow',
+  title: 'contentRow/ContentRow',
   component: ContentRow,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

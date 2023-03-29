@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Footer, { IFooter } from './Footer';
 import { mockFooterProps } from './Footer.mocks';
 export default {
-  title: 'cards/FoodCard',
+  title: 'footer/Footer',
   component: Footer,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

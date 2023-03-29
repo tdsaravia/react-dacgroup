@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import StoreHours, { IStoreHours } from './storeHours';
 import { mockStoreHoursProps } from './storeHours.mocks';
 export default {
-  title: 'templates/BaseTemplate',
+  title: 'storeHours/StoreHours',
   component: StoreHours,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

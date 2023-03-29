@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import RecipesCard, { IRecipesCard } from './RecipesCard';
 import { mockRecipesCardProps } from './RecipesCard.mocks';
 export default {
-  title: 'cards/RecipesCard',
+  title: 'recipesCard/RecipesCard',
   component: RecipesCard,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
