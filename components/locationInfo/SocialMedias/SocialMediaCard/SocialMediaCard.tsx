@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
+import BoldLink from '../../../links/boldLink/BoldLink';
 import ReadMore from '../../../readMore/ReadMore';
 import styles from './SocialMediaCard.module.scss';
 
@@ -30,7 +31,7 @@ const SocialMediaCard: React.FC<ISocialMediaCard> = ({
         <div className={styles.card__body}>
           <Image src={icon} alt="clock" className={styles.icon} />
           <ReadMore text={description} maxLength={100} showMoreText="..." />
-          <a>{link}</a>
+          <BoldLink text="View Our Facebook" link={link} />
         </div>
       </div>
     </div>

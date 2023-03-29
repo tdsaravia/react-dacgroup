@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import Breadcrumb from '../components/breadcrumb/Breadcrumb';
 import NavBar from '../components/layouts/navbar/NavBar';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
 import { ContentfulEntry } from '../interfaces/contentful';
 import styles from '../styles/Home.module.scss';
 import { fetchEntries } from '../utils/contentful';
 import { NextPageWithLayout } from './page';
+
 interface Props {
   carousel: ContentfulEntry[];
 }
@@ -42,9 +44,11 @@ const Home: NextPageWithLayout<Props> = ({ carousel }) => {
 export default Home;
 
 Home.getLayout = (page) => {
+  const crumbs = [{ name: 'Home', path: '/' }];
   return (
     <PrimaryLayout>
       <NavBar />
+      <Breadcrumb crumbs={crumbs} />
       {page}
     </PrimaryLayout>
   );

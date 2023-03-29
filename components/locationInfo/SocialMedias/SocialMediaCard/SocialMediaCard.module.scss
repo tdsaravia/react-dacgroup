@@ -19,7 +19,7 @@
 }
 
 .card__body {
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -33,18 +33,11 @@
   }
 
   p {
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 20px !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     color: #101820;
-    text-transform: none !important;
+    text-transform: none;
     margin-right: 20px;
-  }
-  a {
-    font-size: 18px;
-    line-height: 26px;
-    color: #101820;
-    font-weight: 700;
-    text-decoration: underline;
   }
 }

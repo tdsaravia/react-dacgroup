@@ -1,5 +1,5 @@
+import BoldLink from '../../links/boldLink/BoldLink';
 import styles from './LocationData.module.scss';
-
 export interface ILocationData {
   address: string;
   region: string;
@@ -24,9 +24,9 @@ const LocationData: React.FC<ILocationData> = ({
           <p>{storeManager}</p>
           <span>Contact</span>
           <p>{phone}</p>
-          <a href="#">CURBSIDE PICKUP & DELIVERY</a>
-          <a href="#">CURBSIDE PICKUP & DELIVERY</a>
-          <a href="#">CURBSIDE PICKUP & DELIVERY</a>
+          <BoldLink text="Curbside pickup & Delivery" link="/" />
+          <BoldLink text="Join the ultimate loyalty experience" link="/" />
+          <BoldLink text="Order Platters & Catering" link="/" />
           <button>shop now</button>
         </div>
       </div>

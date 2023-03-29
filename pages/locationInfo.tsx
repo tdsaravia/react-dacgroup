@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Breadcrumb from '../components/breadcrumb/Breadcrumb';
 import Button from '../components/button/Button';
 import Footer from '../components/layouts/footer/Footer';
 import NavBar from '../components/layouts/navbar/NavBar';
@@ -9,9 +10,13 @@ import DinnerCard from '../components/locationInfo/dinnerCards/DinnerCard';
 import { mockDinnerCardProps } from '../components/locationInfo/dinnerCards/DinnerCard.mocks';
 import LocationData from '../components/locationInfo/locationData/LocationData';
 import { mockLocationDataProps } from '../components/locationInfo/locationData/LocationData.mocks';
+import LocationMap from '../components/locationInfo/locationMap/LocationMap';
+import { mockLocationMapProps } from '../components/locationInfo/locationMap/LocationMap.mocks';
 import RecipesCard from '../components/locationInfo/recipesCard/RecipesCard';
 import { mockRecipesCardProps } from '../components/locationInfo/recipesCard/RecipesCard.mocks';
 import SocialMedias from '../components/locationInfo/SocialMedias/SocialMedias';
+import StoreHours from '../components/locationInfo/storeHours/storeHours';
+import { mockStoreHoursProps } from '../components/locationInfo/storeHours/storeHours.mocks';
 import Logo from '../public/images/logo.png';
 import Star from '../public/images/Star.png';
 import styles from '../styles/LocationInfo.module.scss';
@@ -37,8 +42,8 @@ const LocationInfo: NextPageWithLayout = () => {
       </div>
       <div className={styles.container__data}>
         <LocationData {...mockLocationDataProps.base} />
-        <LocationData {...mockLocationDataProps.base} />
-        <LocationData {...mockLocationDataProps.base} />
+        <StoreHours {...mockStoreHoursProps.base} />
+        <LocationMap {...mockLocationMapProps.base} />
       </div>
       <div className={styles.carousel__container}>
         <h2>this is carousel content</h2>
@@ -76,9 +81,14 @@ const LocationInfo: NextPageWithLayout = () => {
 export default LocationInfo;
 
 LocationInfo.getLayout = (page) => {
+  const crumbs = [
+    { name: 'Home', path: '/' },
+    { name: 'Location Info', path: '/locationInfo' },
+  ];
   return (
     <PrimaryLayout>
       <NavBar />
+      <Breadcrumb crumbs={crumbs} />
       {page}
       <Footer copyrightText="The Fresh Market, Inc." />
     </PrimaryLayout>

@@ -1,0 +1,37 @@
+.breadcrumb {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #333;
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      p {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: #0070f3;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+
+        .separator {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,2 +1,71 @@
-.component {
+.store_hours__container {
+  display: flex;
+  width: 100%;
+  max-width: 420px;
+  max-height: 280px;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .title {
+    display: flex;
+    justify-content: flex-start;
+
+    p {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #101820;
+    }
+  }
+
+  .date__container {
+    display: flex;
+    width: 100%;
+    max-width: 392px;
+    max-height: 230px;
+    flex-direction: column;
+
+    .date__content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      margin: -15px 0;
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-transform: none;
+
+        color: #101820;
+      }
+    }
+  }
+
+  .amenities__container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 60px 0;
+    h1 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #101820;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: none;
+      color: #101820;
+      margin: -20px 0;
+      max-width: 50%;
+    }
+  }
 }
