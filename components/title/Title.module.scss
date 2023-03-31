@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+
+  .title {
+    color: #2a8738;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+  }
+}

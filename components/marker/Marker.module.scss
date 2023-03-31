@@ -1,0 +1,19 @@
+.marker_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__star_icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  p {
+    color: #2a8738;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+  }
+}

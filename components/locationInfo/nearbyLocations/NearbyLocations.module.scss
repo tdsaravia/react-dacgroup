@@ -1,0 +1,25 @@
+.nearby_locations_container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #101820;
+  }
+
+  &__locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+}

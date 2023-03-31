@@ -2,11 +2,11 @@
 import Breadcrumb from '../components/breadcrumb/Breadcrumb';
 import NavBar from '../components/layouts/navbar/NavBar';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
+import LocationStateList from '../components/locationStateList/LocationStateList';
 import { ContentfulEntry } from '../interfaces/contentful';
 import styles from '../styles/Home.module.scss';
 import { fetchEntries } from '../utils/contentful';
 import { NextPageWithLayout } from './page';
-
 interface Props {
   carousel: ContentfulEntry[];
 }
@@ -37,6 +37,7 @@ const Home: NextPageWithLayout<Props> = ({ carousel }) => {
           />
         </div>
       ))}
+      <LocationStateList />
     </section>
   );
 };

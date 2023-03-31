@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import Breadcrumb from '../components/breadcrumb/Breadcrumb';
 import Button from '../components/button/Button';
 import Footer from '../components/layouts/footer/Footer';
 import NavBar from '../components/layouts/navbar/NavBar';
 import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
+import SocialMedias from '../components/locationInfo/SocialMedias/SocialMedias';
 import ContentRow from '../components/locationInfo/contentRow/ContentRow';
 import { mockContentRowProps } from '../components/locationInfo/contentRow/ContentRow.mocks';
 import DinnerCard from '../components/locationInfo/dinnerCards/DinnerCard';
@@ -12,33 +12,25 @@ import LocationData from '../components/locationInfo/locationData/LocationData';
 import { mockLocationDataProps } from '../components/locationInfo/locationData/LocationData.mocks';
 import LocationMap from '../components/locationInfo/locationMap/LocationMap';
 import { mockLocationMapProps } from '../components/locationInfo/locationMap/LocationMap.mocks';
+import NearbyLocations from '../components/locationInfo/nearbyLocations/NearbyLocations';
 import RecipesCard from '../components/locationInfo/recipesCard/RecipesCard';
 import { mockRecipesCardProps } from '../components/locationInfo/recipesCard/RecipesCard.mocks';
-import SocialMedias from '../components/locationInfo/SocialMedias/SocialMedias';
 import StoreHours from '../components/locationInfo/storeHours/storeHours';
 import { mockStoreHoursProps } from '../components/locationInfo/storeHours/storeHours.mocks';
-import Logo from '../public/images/logo.png';
-import Star from '../public/images/Star.png';
+import Marker from '../components/marker/Marker';
+import Title from '../components/title/Title';
 import styles from '../styles/LocationInfo.module.scss';
 import { NextPageWithLayout } from './page';
 const LocationInfo: NextPageWithLayout = () => {
   return (
     <section>
       <div className={styles.title}>
-        <div className={styles.marker}>
-          <Image
-            src={Logo}
-            alt="logo"
-            width={40}
-            height={40}
-            className={styles.title__image}
-          />
-          <h2>THE FRESH MARKET ON BISCAYNE BLVD</h2>
-        </div>
-        <div className={styles.marker}>
-          <Image src={Star} alt="star" className={styles.title__star_icon} />
-          <p>Make My Store</p>
-        </div>
+        <Title
+          title="The fresh market on"
+          place="Biscayne blvd"
+          color="green"
+        />
+        <Marker />
       </div>
       <div className={styles.container__data}>
         <LocationData {...mockLocationDataProps.base} />
@@ -74,6 +66,7 @@ const LocationInfo: NextPageWithLayout = () => {
       </div>
       <ContentRow {...mockContentRowProps.base} />
       <SocialMedias />
+      <NearbyLocations />
     </section>
   );
 };

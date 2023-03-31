@@ -12,6 +12,12 @@ const NavBar: React.FC<INavBar> = () => {
       <Link href="/locationInfo">
         <p>Location info</p>
       </Link>
+      <Link href="/search-results">
+        <p>Search Results</p>
+      </Link>
+      <Link href="/location-state">
+        <p>Location State</p>
+      </Link>
     </nav>
   );
 };

@@ -1,0 +1,44 @@
+.locations_container {
+  display: flex;
+  width: 92%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-top: 1px solid #555555;
+  justify-content: space-between;
+  .location {
+    width: 150px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.firstLetter {
+  font-weight: 700;
+  font-size: 24px;
+  color: #277c34;
+  border-bottom: 1px solid #000;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
