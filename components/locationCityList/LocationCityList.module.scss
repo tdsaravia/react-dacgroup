@@ -1,0 +1,29 @@
+.location_city_container {
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__title {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    h2 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 39px;
+      text-transform: uppercase;
+      color: #101820;
+    }
+  }
+
+  .location_city_container__locations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+}

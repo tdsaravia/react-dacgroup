@@ -10,6 +10,9 @@ const NearbyLocations: React.FC = () => {
       </div>
       <div className={styles.locations_container__locations}>
         <Location {...mockLocationProps.base} />
+        <Location {...mockLocationProps.base} />
+        <Location {...mockLocationProps.base} />
+        <Location {...mockLocationProps.base} />
       </div>
       <div>
         <Button

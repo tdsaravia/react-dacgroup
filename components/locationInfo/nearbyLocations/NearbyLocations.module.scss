@@ -15,9 +15,9 @@
     color: #101820;
   }
 
-  &__locations {
+  .locations_container__locations {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 100%;

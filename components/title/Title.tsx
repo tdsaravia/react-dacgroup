@@ -19,8 +19,8 @@ const Title: React.FC<ITitle> = ({ title, place, color = '#101820' }) => {
       <Image
         src={Logo}
         alt="logo"
-        width={40}
-        height={40}
+        width={400}
+        height={400}
         className={styles.logo}
       />
       <h1 className={styles.title} style={{ color }}>
