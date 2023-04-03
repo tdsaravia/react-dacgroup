@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Logo from '../../public/images/logo.png';
 import styles from './Title.module.scss';
+
 export interface ITitle {
   title: string;
   place: string;
