@@ -7,9 +7,16 @@ export interface IRecipesCard {
   time: string;
   serve: string;
   image: string | StaticImageData;
+  link: string;
 }
 
-const RecipesCard: React.FC<IRecipesCard> = ({ title, time, serve, image }) => {
+const RecipesCard: React.FC<IRecipesCard> = ({
+  title,
+  time,
+  serve,
+  image,
+  link,
+}) => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -34,7 +41,7 @@ const RecipesCard: React.FC<IRecipesCard> = ({ title, time, serve, image }) => {
               {serve}
             </p>
           </div>
-          <a>View Recipe &gt;</a>
+          <a href={link}>View Recipe &gt;</a>
         </div>
       </div>
     </div>

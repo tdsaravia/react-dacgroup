@@ -12,7 +12,6 @@ const LocationStateList: React.FC = () => {
     fetch('/states.json')
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setStates(data.states);
       });
   }, [states]);

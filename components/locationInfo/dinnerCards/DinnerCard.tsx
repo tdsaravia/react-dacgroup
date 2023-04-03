@@ -2,16 +2,16 @@ import Image, { StaticImageData } from 'next/image';
 import Button from '../../button/Button';
 import styles from './DinnerCard.module.scss';
 export interface IDinnerCard {
-  header: string;
+  availableDate: string;
   image: string | StaticImageData;
-  price: string;
+  price: number;
   title: string;
   description: string;
 }
 
 const DinnerCard: React.FC<IDinnerCard> = ({
   title,
-  header,
+  availableDate,
   image,
   price,
   description,
@@ -21,7 +21,7 @@ const DinnerCard: React.FC<IDinnerCard> = ({
       <div className={styles.card}>
         <div className={styles.card__header}>
           <div className={styles.header__title}>
-            <p>{header}</p>
+            <p>{availableDate}</p>
           </div>
           <Image
             src={image}
@@ -34,7 +34,7 @@ const DinnerCard: React.FC<IDinnerCard> = ({
         <div className={styles.card__body}>
           <div className={styles.card__content}>
             <h4>{title}</h4>
-            <h4>{price}</h4>
+            <h4>${price}</h4>
           </div>
           <div className={styles.card__content}>
             <p>{description}</p>

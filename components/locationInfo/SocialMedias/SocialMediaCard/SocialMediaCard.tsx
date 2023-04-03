@@ -7,6 +7,7 @@ export interface ISocialMediaCard {
   icon: string | StaticImageData;
   description: string;
   link: string;
+  textLink: string;
   image: string | StaticImageData;
 }
 
@@ -15,6 +16,7 @@ const SocialMediaCard: React.FC<ISocialMediaCard> = ({
   description,
   link,
   image,
+  textLink,
 }) => {
   return (
     <div className={styles.container}>
@@ -29,9 +31,15 @@ const SocialMediaCard: React.FC<ISocialMediaCard> = ({
           />
         </div>
         <div className={styles.card__body}>
-          <Image src={icon} alt="clock" className={styles.icon} />
+          <Image
+            src={icon}
+            alt="clock"
+            className={styles.icon}
+            width="400"
+            height="400"
+          />
           <ReadMore text={description} maxLength={100} showMoreText="..." />
-          <BoldLink text="View Our Facebook" link={link} />
+          <BoldLink text={textLink} link={link} />
         </div>
       </div>
     </div>

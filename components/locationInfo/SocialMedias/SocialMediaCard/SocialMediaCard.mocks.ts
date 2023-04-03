@@ -7,6 +7,7 @@ const base: ISocialMediaCard = {
   link: 'view our facebook',
   image: Womans,
   icon: FbLogo,
+  textLink: 'view our facebook',
 };
 
 export const mockSocialMediaCardProps = {

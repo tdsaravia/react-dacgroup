@@ -5,6 +5,7 @@ const base: IRecipesCard = {
   time: '30 minutes',
   serve: 'Serves 3-4',
   image: Pizza,
+  link: 'https://www.google.com',
 };
 
 export const mockRecipesCardProps = {
