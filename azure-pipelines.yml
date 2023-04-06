@@ -1,32 +1,31 @@
 trigger:
   branches:
     include:
-    - main
+      - main
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '14.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '14.x'
+    displayName: 'Install Node.js'
 
-- script: |
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-    sudo apt-get update
-    sudo apt-get install yarn
-  displayName: 'Install Yarn'
+  - script: |
+      curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+      echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+      sudo apt-get update
+      sudo apt-get install yarn
+    displayName: 'Install Yarn'
 
-- script: |
-    yarn install
-  displayName: 'Install dependencies'
-
-- script: |
-    yarn build
-  displayName: 'Build Next.js application'
-
+  - script: |
+      yarn install
+    displayName: 'Install dependencies'
+  # API keys should be done in pipelines but doing it here for simplicity
+  - script: |
+      API_CONTENTFUL_SPACE=oowvels4urqz API_CONTENTFUL_ACCESS_TOKEN=2XUwTDdtuzckBBQsDn-JvLonl85Kj5YJL5WBUNNuW50 yarn build
+    displayName: 'Build Next.js application'
 # Uncomment the following lines if you want to include building Storybook in your pipeline
 #- script: |
 #    yarn build-storybook
