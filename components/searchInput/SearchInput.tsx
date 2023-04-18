@@ -3,6 +3,7 @@ import styles from './SearchInput.module.scss';
 
 type Props = {
   value: string;
+  // eslint-disable-next-line no-unused-vars
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onClear: () => void;
 };
