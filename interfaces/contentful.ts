@@ -1,4 +1,6 @@
-export interface ContentfulEntry {
+import { EntrySkeletonType } from 'contentful';
+
+export interface ContentfulEntry extends EntrySkeletonType {
   fields: {
     title: string;
     description: string;
